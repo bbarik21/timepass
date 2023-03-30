@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Geolocation API</title>
+</head>
+<body>
+    <div class="one">
+<h1><u>How To Reach Us</h1></u>
+    <p>Lifecare Hospital & Research center<br>
+       A-791,Bandra Reclamation ,Bandra(W),Mumbai-400020,India.</p>
+    
+    
+    
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.0848170032198!2d73.11138234352042!3d19.012245330378335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e94483dca5df%3A0x67b9e5e61f18edfb!2sSairama%20One%20World!5e0!3m2!1sen!2sin!4v1677782178717!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div id="demo" style="width: 600px; height: 400px; margin-left:200px;">
+</div>
+<script src="https://maps.google.com/maps/api/js?sensor=false">
+</script> <script type="text/javascript">
+function getlocation() {
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(showPos,
+showErr); }
+else {
+alert("Sorry! your Browser does not support Geolocation
+API") }
+}
+//Showing Current Poistion on Google Map
+function showPos(position) {
+latt = position.coords.latitude;
+long = position.coords.longitude;
+var lattlong = new google.maps.LatLng(latt, long);
+var myOptions = {
+center: lattlong,
+zoom: 15,
+mapTypeControl: true,
+navigationControlOptions: { style:
+google.maps.NavigationControlStyle.SMALL }
+}
+var maps = new google.maps.Map(document.getElementById("demo"),
+myOptions);
+var markers =
+new google.maps.Marker({ position: lattlong, map: maps, title: "You are
+here!" });
+}
+//Handling Error and Rejection
+function showErr(error) {
+switch (error.code) {
+case error.PERMISSION_DENIED:
+alert("User denied the request for Geolocation API.");
+break;
+case error.POSITION_UNAVAILABLE:
+alert("USer location information is unavailable.");
+break;
+case error.TIMEOUT:
+alert("The request to get user location timed out.");
+break;
+case error.UNKNOWN_ERROR:
+alert("An unknown error occurred.");
+break;
+}
+}
+
+
+
+</script>
+</div>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+table {
+  font-family: TIMES NEW ROMAN, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+h2{
+    font-size: x-large;
+    color: rgb(31, 133, 133);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+h1{
+    font-size: x-large;
+    color: rgb(31, 133, 133);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.column {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.one{float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: medium;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="column">
+<h2><u>Important Phone Number</u></h2>
+
+<table>
+  <tr>
+    <th>Branch</th>
+    <th>Contact no.</th>
+    
+  </tr>
+  <tr>
+    <td>Ambulance</td>
+    <td>+91 9769250010 </td>
+    
+  </tr>
+  <tr>
+    <td>Boardline</td>
+    <td>22-69318000 / 69301000 / 022-50598000 / 022-50591000</td>
+    
+  </tr>
+  <tr>
+    <td>Emergency/ Casualty</td>
+    <td> 	022-69318063 / 69318064 / +91 8657907754 </td>
+    
+  </tr>
+  <tr>
+    <td>Admission Department</td>
+    <td>8080/ 8081/ 8082</td>
+    
+  </tr>
+  <tr>
+    <td>Appointment - OPD</td>
+    <td>8657907751 / 8657907752 / 8657907753</td>
+    
+  </tr>
+  <tr>
+    <td>Biling inpatient</td>
+    <td>1586</td>
+    
+  </tr>
+  <tr>
+    <td>Biling OPD</td>
+    <td>1424</td>
+    
+  </tr>
+  <tr>
+    <td>Blood Bank</td>
+    <td>4564</td>
+    
+  </tr>
+  <tr>
+    <td>Cardiology</td>
+    <td>8564</td>
+    
+  </tr>
+  <tr>
+    <td>CT scan Department</td>
+    <td>6546</td>
+    
+  </tr>
+  <tr>
+    <td>dental</td>
+    <td>5776</td>
+    
+  </tr>
+  <tr>
+    <td>dermatology</td>
+    <td>8021</td>
+    
+  </tr>
+  <tr>
+    <td>cardiology</td>
+    <td>8235</td>
+    
+  </tr>
+  <tr>
+    <td>health checkup Department</td>
+    <td>9024642832</td>
+    
+  </tr>
+  <tr>
+    <td>home sample collection(monday to saturday:8am-8am-6pm)</td>
+    <td>5432</td>
+    
+  </tr>
+  <tr>
+    <td>hospital fax</td>
+    <td>+91 (22) 2640 7655</td>
+    
+  </tr>
+  <tr>
+    <td>X-Ray,Sonography Department</td>
+    <td>9024/4235</td>
+    
+  </tr>
+  <tr>
+    <td>Visa Section</td>
+
+    <td>5346/4656/343165543(12 noon to 4pm,Mon to Sat)</td>
+    
+  </tr>
+</table>
+
+<body>
+
+<h2><u>Email Address</u></h2>
+
+<table>
+  <tr>
+    <th>Branch</th>
+    <th>Contact no.</th>
+    
+  </tr>
+  <tr>
+    <td>For feedback/suggestion:</td>
+
+    <td>feedback@lifecarehospital.com</td>
+    
+  </tr>
+  
+  <tr>
+    <td>For grievance:</td>
+
+    <td>complaints@lifecarehospital.com</td>
+    
+  </tr>
+  <tr>
+    <td>For any other queries:</td>
+
+    <td>info@lifecarehospital.com</td>
+    
+  </tr>
+
+</div>
+
+
+</body>
+</html>

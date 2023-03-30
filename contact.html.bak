@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Login Form
+</title>
+<style>
+body {
+ background-image:  
+url('https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.table{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>
+Login form
+</h1>
+</center>
+</font>
+<br><br>
+<center><p>Please fill in your details</p></center>
+<br><br>
+<form>
+<center>
+<table>
+<tr>
+<td>
+&nbsp;&nbsp;Name:
+</td>
+<td>
+&nbsp;&nbsp;<input type="text" placeholder="Name" name="">
+</td>
+</tr>
+<tr>
+<td>
+<br>&nbsp;&nbsp;Phone no:
+</td>
+<td>
+<br>&nbsp;&nbsp;<select>
+<option>977</option>
+<option>978</option>
+<option>979</option>
+<option>980</option>
+<option>981</option>
+</select>
+<input type="Phone" placeholder="96784*****" name="">
+</td>
+</tr>
+<tr>
+<td>
+<br>&nbsp;&nbsp;Gender:
+</td>
+<td>
+<br>&nbsp;&nbsp;<input type="radio" name="Gender">Male
+<br>&nbsp;&nbsp;<input type="radio" name="Gender">Female
+</td>
+</tr>
+<tr>
+<td>
+<br>&nbsp;&nbsp;Email:
+</td>
+<td>
+<br>&nbsp;&nbsp;<input type="mail" placeholder="Email" name="">
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;&nbsp;<center><button>Submit</button></center>
+</td>
+</tr>
+</table>
+</form>
+</center>
+<video width="320" height="240" controls>
+<source src="movie.mp4">
+Your browser does not support the video tag.
+</video><br><br>
+<audio controls autoplay>
+<source src="audio.mp3">
+Your browser does not support the audio element.
+</audio>
+</body>
+<footer>
+<br><br><br>
+<center>
+<img src="9.jpg" width="20" height="20">&nbsp;&nbsp;<img src="10.jpg" width="20" height="20">&nbsp;<img src="11.jpg" width="20" height="20">
+<br>
+<img src="12.jpg" width="60" height="20">
+</center>
+</footer>
+</html>
